@@ -1,0 +1,39 @@
+<!DOCTYPE html> <!-- Đã sửa dấu chấm than ở đây -->
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>con thằn lằn</title>
+    <link rel="icon" type="image/jpeg" href="iconimg.jpg">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="info">
+        <h4 class="trai">contact</h4>
+        <a href="index.html" class="goback phai">go back</a> <!-- Đưa class goback ra thẻ a, bỏ thẻ h4 thừa bên trong để chuẩn cấu trúc -->
+    </div>    
+    <div class="duoi">
+        contact to producer: 
+        <span id="copyTarget" onclick="copyText()" style="cursor: pointer; background: #555; padding: 3px 8px; border-radius: 4px; margin-left: 5px;">
+            massivehugeratmonster@gmail.com
+        </span>
+        <br>
+        <br>
+        booking: 
+        <span id="copyTarget" onclick="copyText()" style="cursor: pointer; background: #555; padding: 3px 8px; border-radius: 4px; margin-left: 5px;">
+            conthanlanbooking@420blaze.it
+        </span>
+    </div>
+
+    <script>
+        function copyText() {
+            var text = document.getElementById("copyTarget").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Đã copy: " + text);
+            }).catch(function(err) {
+                console.error("Lỗi khi copy: ", err);
+            });
+        }
+    </script>
+    
+</body>
+</html>

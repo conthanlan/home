@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+    font-family: Montserrat;
+    overflow: hidden;
+    color: white;
+}
+
+.trai {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.phai {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #454749;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.goback {
+    z-index: 999;
+    text-decoration: none;
+}

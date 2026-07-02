@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+    background-color: #000000;
+    font-family: Montserrat;
+    overflow: hidden;
+    color: white;
+}
+
+.info {
+    z-index: 9999;
+}
+.trai {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.phai {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.goback {
+    z-index: 999;
+}
+
+.khungtroi {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.chutroi {
+    position: absolute;
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
+    white-space: nowrap;
+    opacity: 0.8;
+    cursor: pointer;
+    margin-top: -12px;
+    transition: opacity 0.2s, color 0.2s, text-shadow 0.2s; 
+}
+.chutroi:hover {
+    opacity: 1;
+    color: #fff;
+    text-shadow: 0 0 15px #66fcf1;
+}
+.chu1 {
+    top: 25%; 
+    left: 75%;
+    animation: khungtroi1 40s ease-in-out infinite alternate;
+}
+
+.chu2 {
+    top: 50%; 
+    left: 50%;
+    animation: khungtroi2 40s ease-in-out infinite alternate;
+}
+
+.chu3 {
+    top: 75%; 
+    left: 25%;
+    animation: khungtroi3 40s ease-in-out infinite alternate;
+}
+.chu4 {
+    top: 35%; 
+    left: 25%;
+    animation: khungtroi4 40s ease-in-out infinite alternate;
+}
+.chu5 {
+    top: 75%; 
+    left: 55%;
+    animation: khungtroi5 40s ease-in-out infinite alternate;
+}
+.chu6 {
+    top: 65%; 
+    left: 76%;
+    animation: khungtroi6 40s ease-in-out infinite alternate;
+}
+
+
+@keyframes khungtroi1 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  33%  { transform: translate(40vw, -40vh) rotate(30deg); }
+  66%  { transform: translate(-45vw, 20vh) rotate(-20deg); }
+  100% { transform: translate(35vw, 35vh) rotate(15deg); }
+}
+
+@keyframes khungtroi2 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  40%  { transform: translate(-40vw, -35vh) rotate(-45deg); }
+  70%  { transform: translate(45vw, -10vh) rotate(20deg); }
+  100% { transform: translate(-35vw, 40vh) rotate(-15deg); }
+}
+
+@keyframes khungtroi3 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(40vw, 0vh) rotate(10deg); }
+  50%  { transform: translate(-40vw, -40vh) rotate(-30deg); }
+  75%  { transform: translate(0vw, 45vh) rotate(15deg); }
+  100% { transform: translate(-45vw, -10vh) rotate(-5deg); }
+}
+@keyframes khungtroi4 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  40%  { transform: translate(-50vw, -30vh) rotate(-45deg); }
+  70%  { transform: translate(45vw, -10vh) rotate(20deg); }
+  100% { transform: translate(-35vw, 40vh) rotate(-15deg); }
+}
+@keyframes khungtroi5 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(40vw, 0vh) rotate(10deg); }
+  50%  { transform: translate(-50vw, -5vh) rotate(-30deg); }
+  75%  { transform: translate(0vw, 45vh) rotate(15deg); }
+  100% { transform: translate(-45vw, -10vh) rotate(-5deg); }
+}
+@keyframes khungtroi6 {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  25%  { transform: translate(-40vw, 0vh) rotate(10deg); }
+  50%  { transform: translate(-48vw, 20vh) rotate(-30deg); }
+  75%  { transform: translate(35vw, -50vh) rotate(15deg); }
+  100% { transform: translate(45vw, -10vh) rotate(-5deg); }
+}
