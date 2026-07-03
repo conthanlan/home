@@ -19,7 +19,7 @@
         <br>
         <br>
         booking: 
-        <span id="copyTarget" onclick="copyText()" style="cursor: pointer; background: #555; padding: 3px 8px; border-radius: 4px; margin-left: 5px;">
+        <span id="copyTarget1" onclick="copyText()" style="cursor: pointer; background: #555; padding: 3px 8px; border-radius: 4px; margin-left: 5px;">
             conthanlanbooking@420blaze.it
         </span>
     </div>
@@ -27,6 +27,14 @@
     <script>
         function copyText() {
             var text = document.getElementById("copyTarget").innerText;
+            navigator.clipboard.writeText(text).then(function() {
+                alert("Đã copy: " + text);
+            }).catch(function(err) {
+                console.error("Lỗi khi copy: ", err);
+            });
+        }
+        function copyText() {
+            var text = document.getElementById("copyTarget1").innerText;
             navigator.clipboard.writeText(text).then(function() {
                 alert("Đã copy: " + text);
             }).catch(function(err) {
