@@ -9,10 +9,17 @@
 
 body {
     font-family: Montserrat;
-    overflow: hidden;
     color: white;
 }
-
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    body {
+        font-size: 18px; 
+    }
+}
 .trai {
     position: fixed;
     top: 20px;
